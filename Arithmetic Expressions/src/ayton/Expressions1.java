@@ -5,7 +5,8 @@ package ayton;
 import java.util.Scanner;
 /**
  * @author 324117274
- *
+ *taejaun ayton
+ *09/27/16
  */
 public class Expressions1 {
 
