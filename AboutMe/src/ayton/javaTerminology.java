@@ -5,6 +5,8 @@ package ayton;
 
 /**
  * @author 324117274
+ * Taejaun Ayton
+ * 09/26/ 
  *
  */
 public class javaTerminology {
