@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>unit 2</name>
+=======
+	<name>Arithmetic Expressions</name>
+>>>>>>> branch 'master' of https://github.com/taejaun100/ICS4U.git
 	<comment></comment>
 	<projects>
 	</projects>
