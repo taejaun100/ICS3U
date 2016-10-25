@@ -5,9 +5,13 @@ package ayton;
 
 /**
  * @author 324117274
- *Taejaun Ayton 09/15/16 Bingo
+ * ICS3U
+ *Taejaun Ayton 
+ *09/15/16 
+ *Bingo
+ *creating bingo card
  */
-public class Bingo {
+public class BingoCard {
 
 	/**
 	 * @param args

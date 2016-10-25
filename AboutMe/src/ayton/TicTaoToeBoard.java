@@ -5,7 +5,11 @@ package ayton;
 
 /**
  * @author 324117274
- *Taejaun Ayton 09/19/16 tictactoe Board
+ * ICS3U
+ *Taejaun Ayton 
+ *09/19/16 
+ *TicTacToe Board
+ *making the board
  */
 public class TicTaoToeBoard {
 

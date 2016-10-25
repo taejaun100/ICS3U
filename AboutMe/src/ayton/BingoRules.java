@@ -5,16 +5,20 @@ package ayton;
 
 /**
  * @author 324117274
- *Taejaun Ayton 09/15/16 Bingo
+ *ICS3U
+ *Taejaun Ayton 
+ *09/15/16 
+ *Bingo Card
+ *Making the bingo rules 
  */
-public class Bingo2 {
+public class BingoRules {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Bingo card\n");
+		System.out.println("Bingo Rules\n");
 		System.out.println("1. The caller randomly pulls numbered bingo ball.\n");
 		System.out.println("2. The number is placed on the bingo board and called out.\n");
 		System.out.println("3. Players look for the called number on thier bingo card.\n");
