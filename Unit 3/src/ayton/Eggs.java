@@ -15,7 +15,6 @@ import java.util.Scanner;
  *number testing 
  */
 public class Eggs {
-
 	/**
 	 * @param args
 	 */
@@ -26,7 +25,7 @@ public class Eggs {
 		
 		double egg;
 		
-		System.out.println("Enter the number of copy's:");egg = scan.nextDouble() ;
+		System.out.println("Enter the number of eggs:");egg = scan.nextDouble() ;
 		egg = egg/12;		
 				
 				
