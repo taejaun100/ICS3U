@@ -7,7 +7,9 @@ import java.util.Scanner;
 
 /**
  * @author 324117274
- *
+ *11/14/16
+ *Random Generator
+ *Generating a random set of numbers
  */
 public class GuessingGame {
 
