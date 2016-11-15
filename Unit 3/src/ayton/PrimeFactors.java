@@ -7,7 +7,9 @@ import java.util.Scanner;
 
 /**
  * @author 324117274
- *
+ *11/14/16
+ *Random Generator
+ *find prime factor numbers
  */
 public class PrimeFactors {
 

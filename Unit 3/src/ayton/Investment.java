@@ -7,7 +7,9 @@ import java.util.Scanner;
 
 /**
  * @author 324117274
- *
+ *11/14/16
+ *investment
+ *Generating years it would take to reach total
  */
 public class Investment {
 
