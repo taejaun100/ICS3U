@@ -22,19 +22,21 @@ public class GuessingGame {
 		
 	int computer;
 	int user;
-	
+
 	computer=(int)(Math.random()*20)+1;
-	
+
 	System.out.println("Enter a number between 1 and 20:");
 	user = scan.nextInt() ;
 	System.out.println("Computer's number:"+computer);
 	System.out.println("Player's number:"+user);
 	
 	 if (user==computer){
-		 System.out.println("ou won!");
+		 System.out.println("You won!");
 	 } 
 	 else {
 		 System.out.println("Better luck next time.");
 	}
+
 	}
 }
+
