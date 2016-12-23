@@ -20,25 +20,34 @@ public class CYOA {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Console c = new Console();
-		BufferedImage[] equipment = new BufferedImage[10];
-
+		BufferedImage[] equipment = new BufferedImage[3];
+		BufferedImage[] image = new BufferedImage[15];
+		
 		try {
 		equipment[0] = ImageIO.read(new File("src/axe.jpg"));
 		equipment[1] = ImageIO.read(new File("src/flare gun.jpg"));
 		equipment[2] = ImageIO.read(new File("src/Note7.jpg"));
-		equipment[3] = ImageIO.read(new File("src/PlaneCrash.jpg"));
-		equipment[4] = ImageIO.read(new File("src/wolf.jpg"));
-		equipment[5] = ImageIO.read(new File("src/lock door.jpg"));
-		
+		image[0] = ImageIO.read(new File("src/PlaneCrash.jpg"));
+		image[1] = ImageIO.read(new File("src/wolf.jpg"));
+		image[2] = ImageIO.read(new File("src/lock door.jpg"));
+		image[3] = ImageIO.read(new File("src/raft.jpg"));
+		image[4] = ImageIO.read(new File("src/fire.jpg"));
+		image[5] = ImageIO.read(new File("src/flare2.jpg"));
+		image[6] = ImageIO.read(new File("src/helicopter-over-forest.jpg"));
+		image[7] = ImageIO.read(new File("src/alarm.jpg"));
+		image[8] = ImageIO.read(new File("src/poison.jpg"));
+		image[9] = ImageIO.read(new File("src/flammingarrow.jpg"));
+		image[10] = ImageIO.read(new File("src/hole.jpg"));
+		image[11] = ImageIO.read(new File("src/Curious_shark.jpg"));
 		
 		String q;
-		c.println("Would you like to play again");
+		c.println("Would you like to play the game?");
 		q = c.readLine();
 		do {
 			c.clear();
 			c.println("You woke up after your plane crashed on a small island");
 			c.println("Would you like to explore the Island or stay with the plane?(explore/stay)");
-			c.drawImage (equipment[3], 0, 75, 700, 500, null);
+			c.drawImage (image[0], 0, 75, 700, 500, null);
 			String q1 = c.readLine();
 			c.clear();
 			if (q1.equals("explore")) {
@@ -48,13 +57,14 @@ public class CYOA {
 				if (q2.equals("south")) {
 					c.println("A pack of wolf starts to chase you");
 					c.println("Do you run away or climb a tree?(tree/run)");
-					c.drawImage (equipment[4], 0, 75, 700, 500, null);
+					c.drawImage (image[1], 0, 75, 700, 500, null);
 					String q3 = c.readLine();
 					c.clear();
 					if (q3.equals("run")) {
 						c.println("You got tired of running, as you look back, the pack is getting closer");
 						c.println("and catches you");
 						c.println("You died");
+						c.drawImage (image[1], 0, 75, 700, 500, null);
 						c.println("Would you like to play again?");
 						q = c.readLine();
 						c.clear();
@@ -85,11 +95,12 @@ public class CYOA {
 					c.clear();
 					if (q5.equals("axe")) {
 						c.println("Would you like to build a fire or a raft?(fire/raft)");
+						c.drawImage (image[3], 0, 50, 250, 250, null);
+						c.drawImage (image[4], 300, 50, 250, 250, null);
 						String q6 = c.readLine();
 						c.clear();
 						if (q6.equals("raft")) {
-							c.println(
-									"You build a raft, after the raft is built you use it to flot to a near by boat ");
+							c.println("You build a raft, after the raft is built you use it to flot to a near by boat ");
 							c.println("You won");
 							c.println("Would you like to play again?");
 							q = c.readLine();
@@ -99,6 +110,7 @@ public class CYOA {
 							c.println("When you go to collect fire wood, a pack of wolf jumped you from behind");
 							c.println("and killed you");
 							c.println("You died");
+							c.drawImage (image[1], 0, 75, 700, 500, null);
 							c.println("Would you like to play again?");
 							q = c.readLine();
 							c.clear();
@@ -112,6 +124,7 @@ public class CYOA {
 					} else {
 						c.println("As you pick up the flare");
 						c.println("You see a helicopter and use it to call for it");
+						c.drawImage (image[5], 0, 100, 300, 300, null);
 						c.println("You won");
 						c.println("Would you like to play again?");
 						q = c.readLine();
@@ -134,17 +147,19 @@ public class CYOA {
 						c.println("You got Heads");
 						c.println("You head to the front of the plane.");
 						c.println("When you reach the head of the plane. There is a door that is locked.");
-						c.drawImage (equipment[5], 150, 150, 300, 300, null);
+						c.drawImage (image[2], 150, 150, 300, 300, null);
 						int computer = (int) (Math.random() * 10) + 1;
 						int counter=0;
 						while (counter<=2){
 							c.print("Enter a number between 1 and 10 you have 3 trys:");
 							int user = c.readInt();
+							c.clear();
 							if (user == computer) {
 								c.println("You get in and see a black box. You use it to call for help");
 								c.println("Few hours later you hear, loud noise, as you look up you");
 								c.println("see a helicopter. Comming to save you");
 								c.println("You SURVIVE!!");
+								c.drawImage (image[6], 0, 150, 300, 300, null);
 								c.println("Would you like to play again?");
 								q = c.readLine();
 								break;
@@ -154,8 +169,10 @@ public class CYOA {
 							}
 						}
 						if(counter == 3){
+							
 							c.println("You set off an alarm, then predators were attracted to the noise");
 							c.println("Surrounded with no way out");
+							c.drawImage (image[7], 0, 150, 300, 300, null);
 							c.println("You Died from predator attack");
 							c.println("Would you like to play again");
 							q = c.readLine();
@@ -166,6 +183,7 @@ public class CYOA {
 						c.println("You headed to the end of the plane and found a flashlight laying in the ground,");
 						c.println("You tryied to pick it up, but you fell in a hole and stepped on a trap, you find");
 						c.println("a puzzle. Which may stop the trap from killing you");
+						c.drawImage (image[10], 0, 150, 300, 300, null);
 					int computer2 = (int) (Math.random() * 10) + 1;
 					int counter2= 0;
 					while (counter2<=1) {
@@ -174,6 +192,7 @@ public class CYOA {
 						if (user2 == computer2) {
 							c.println("The trap stops and a door opens, as you walk towards it");
 							c.println("it shot flaming arrow and killed you");
+							c.drawImage (image[9], 0, 150, 300, 300, null);
 							c.println("Would you like to play again?");
 							q = c.readLine();
 							break;
@@ -183,8 +202,10 @@ public class CYOA {
 
 					}
 					if (counter2 == 2){
+						c.clear();
 						c.println("POISONOUS GAS WAS ACTIVITED");
 						c.println("You Died!");
+						c.drawImage (image[8], 0, 150, 300, 300, null);
 						c.println("Would you like to play again");
 						q = c.readLine();
 
@@ -194,6 +215,7 @@ public class CYOA {
 
 				} else {
 					c.println("You died from starvation and predator attack!!");
+					c.drawImage (image[11], 0, 150, 300, 300, null);
 					c.println("Would you like to play again");
 					q = c.readLine();
 				}
