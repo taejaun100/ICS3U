@@ -21,7 +21,7 @@ public class CYOA {
 		// TODO Auto-generated method stub
 		Console c = new Console();
 		BufferedImage[] equipment = new BufferedImage[3];
-		BufferedImage[] image = new BufferedImage[15];
+		BufferedImage[] image = new BufferedImage[12];
 		
 		try {
 		equipment[0] = ImageIO.read(new File("src/axe.jpg"));
